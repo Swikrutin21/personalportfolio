@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="styles23.css">
+    <style>
+   .container .box h1{
+   padding-top: 60px;
+   padding-left: 35px;
+   font-size: 50px; 
+}
+.information{
+ margin-top: 50px;
+ display: flex;
+}
+ .information .changesec {
+     width: 200px;
+     display: flex;
+     flex-direction: column;
+     margin-top: 80px;
+ }
+ .information .changesec #items{
+       margin:8px;
+       font-size: 25px;
+       
+ }
+ .information .changesec #items a:hover{
+   border-left: 5px white solid;
+   
+      font-size: 25px;
+      transition: border-left 0.3s, font-size 0.3s;
+      cursor: pointer;
+ }
+.information .changesec #items a.active-link {
+  border-left: 5px white solid;
+  font-size: 25px;
+  transition: border-left 0.3s, border-bottom 0.3s, font-size 0.3s;
+}
+
+ .information main{
+  width: 75%;
+  aspect-ratio: 5/2;
+     transform: translateY(-30px);
+     margin-left: 300px;
+     height: 300px;
+     overflow-y: auto;
+
+ }
+ .information main div{
+       display: none;
+ }
+ .active {
+   display: block;
+ }
+   /*Education section*/
+   .information main .Education-sec {
+    letter-spacing: 1px;
+   }
+   .information main .Education-sec h3{
+    font-size:20px; 
+    padding: 4px; 
+    border-bottom: 3px solid rgb(253, 253, 253); 
+    border-radius: 5px;  
+    color: rgb(249, 249, 249);
+   }
+   .information main .Education-sec h3 span{
+    padding: 1px;
+    font-style: italic; 
+    font-weight: 200; 
+    font-size: medium; 
+    color: rgb(240, 25, 25);
+    background-color: antiquewhite;
+   }
+
+   /*Skills section*/
+   .information main .skill-sec h2{
+      border-bottom: 2px solid white;
+      letter-spacing: 1px;
+   }
+   .information main .skill-sec h3{
+    padding: 3px;
+      font-size: 25px;
+      font-weight: 200;
+      letter-spacing: 1px;
+   }
+   .information main .skill-sec p{
+     margin-top:4px;
+     margin-bottom: 10px;
+    }
+   .information main .skill-sec span{
+      padding: 5px;
+      margin: 10px;
+      font-size: 15px;
+      font-weight:600;
+      color: rgb(249, 103, 6);
+      background-color: rgb(255, 255, 254);
+      border: 2px solid white;
+      border-radius: 30%;
+    }
+
+    /*Career exposure section*/
+    .information main .caree-exp h2{
+        padding-left: 2px;
+        margin-bottom: 2px;
+        border-bottom: 2px solid white;
+
+    }
+    .information main .caree-exp h3{
+      margin-top: 10px;
+      font-size: 25px;
+      padding: 2px;
+      background-color: rgba(66, 66, 66, 0.732);
+      letter-spacing: 1px;
+   }
+    .information main .caree-exp p{
+      padding: 2px;
+      margin-left: 30px;
+
+    }
+    .information main .caree-exp span{
+        font-size: 20px;
+        margin-right: 3px;
+
+    }
+    /**Awards & Acheivement section*/
+    .information main .awd-sec h3{
+      padding: 3px;
+      font-size: 25px;
+      font-weight: 200;
+      letter-spacing: 1px;
+   }
+
+     /*Project Section*/
+     .information main .pro-sec h2{
+         letter-spacing: 1px;
+         font-size: 30px;
+         font-weight: 300;
+     }
+     .information main .pro-sec section{
+         margin-left: 30px;
+         margin: 4px;
+         display: flex
+     }
+     .information main .pro-sec section span{
+      padding: 3px;
+      margin: 7px;
+      font-size: 15px;
+      font-weight:600;
+      color: rgb(249, 103, 6);
+      background-color: rgb(255, 255, 254);
+      border: 2px solid white;
+      border-radius: 30%;
+     }
+    </style>
+</head>
+<body>
+     <div class="container">
+          <div class="box">
+            <nav class="menubar">
+                <div><a href="index.html">Home</a></div>
+                <div><a href="About.html">About</a></div>
+                <div><a href="Portfolio.html">Portfolio</a></div>
+                <div><a href="Contact.html">Contact</a></div>
+              </nav>
+            <div class="changedir"> 
+              <h1>About</h1>
+             <div class="information">
+              <nav class="changesec">
+                <div id="items"><a data-id="1">Introduction</a></div> 
+                <div id="items"><a data-id="2">Education</a></div>
+                <div id="items"><a data-id="3">Skills</a></div>
+                <div id="items"><a data-id="4">Projects</a></div>
+                <div id="items"><a data-id="5">Career Exposure</a></div>
+                <div id="items"><a data-id="6">Achievement</a></div>
+              </nav>
+              <main>
+                <div class="content active" data-id="1">
+                 <h3 style="color: rgb(250, 250, 250); font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; letter-spacing: 2px; font-size: 30px; ">I am Swikruti Nayak,</h3><br>
+                 <p style=" font-size: 15+px;">a fourth-year computer science student at Trident Academy of Technology in Bhubaneswar, India. 
+                  I have a strong foundation in programming languages, including Java, C/C++, and SQL, and I am proficient in front-end development, back-end development, and Android app development. 
+                  I have also completed several certifications and workshops in related fields. <br> 
+                  I am a motivated and quick learner, and I am eager to apply my skills and knowledge to make a positive contribution to any organization. I am also a team player and reliable.
+                  I am confident that I have the skills and experience necessary to be a successful software developer. I am excited to start my career and make a difference in the world.
+                 </p>
+                 <br>
+                 <h4>Personal Details:</h4> 
+                <p>
+                  Date of birth: March 21, 2003 <br>
+                  Known languages: English, Hindi, Odia
+                </p>
+                </div>
+                  <div class="content Education-sec" data-id="2" >
+                <h3>▩ B.Tech. in Computer Science, Trident Academy of Technology, Bhubaneswar, India <span >(GPA: 8.72)</span></h3> 
+       <p > I am currently pursuing a Bachelor of Technology in Computer Science at Trident Academy of Technology in Bhubaneswar, India. I have a strong academic record, with a GPA of 8.72.</p> 
+                   <br>
+                 <h3>▩ 12th Science from Ramadevi Women's University, Bhubaneswar, India <span >(Percentage: 67.5%)</span></h3> 
+        <p>I completed my 12th grade in Science from Ramadevi Women's University in Bhubaneswar, India, with a score of 67.5%.</p>
+                   <br>
+                 <h3>▩ 10th Board of Secondary Education from Sri Aurobindo Integral Education Centre, Bhubaneswar, India <span>(Percentage: 83.3%) </span></h3> 
+        <p>I completed my 10th grade from Sri Aurobindo Integral Education Centre in Bhubaneswar, India, with a score of 83.3%.</p>
+                  </div>
+                <div class="content skill-sec" data-id="3" >
+                  <h2>Technical Skills</h2>
+                  <h3>Programming Languages</h3>
+                    <p>
+                      <span>Java</span> 
+                      <span>C</span> 
+                      <span>Python</span>
+                      <span>JavaScript</span>
+                      <span>Go</span>
+                    </p>
+                   <h3>Front-end Development</h3>
+                   <p>
+                     <span>HTML</span>
+                     <span>CSS</span>
+                     <span>Bootstrap</span>
+                     <span>JQuery</span>
+                   </p>
+                   <h3>Back-end Development</h3>
+                   <p>
+                    <span>Java</span>
+                    <span>Python</span>
+                    <span>SQL</span>
+                    <span>MongoDB</span>
+                   </p>
+                   <h3>Frameworks</h3>
+                   <p>
+                    <span>Spring Boot</span>
+                    <span>React</span>
+                    <span>Angular</span>
+                   </p>
+                   <h3>Cloud computing</h3>
+                   <p>
+                    <span>AWS EC2</span>
+                   </p>
+                   <h3>Version Control System</h3>
+                   <p>
+                    <span>Git</span>
+                   </p>
+                   <h2>Soft skills</h2>
+                     <h3>● Goal Oriented</h3>
+                     <h3>● Quick Learner</h3>
+                     <h3>● Good Team Player</h3>
+                </div>
+                <div class="content pro-sec" data-id="4">
+                  <h2>Graphical Password Authentication System</h2>
+                    <section> <h3>● Key Skills<h3>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>Java</span>
+                        <span>SQL</span>
+                        <span>JQuery</span>
+                    </section>
+                      <p>We created a website prototype for this system where, upon registration, we are instructed to input our password in a graphical manner by selecting
+                        a series of pictures. then we must select a picture in the same manner when we log in. User doesn't have to remember numerous passwords this
+                        way, and passwords are more safe.</p>
+                  <h2>Budget Tracker</h2>
+                      <section> <h3>● Key Skills<h3>
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                      </section>
+                          <p>As a JavaScript project, I did make a budget tracker. I learned how to use it to develop websites and how it facilitates the addition of animation and
+                            various functionalities.</p>  
+                </div>
+                <div class="content caree-exp" data-id="5">
+                  <h2>Internships</h2>
+                  <h3>▩ Motion Cut ( 25 Sep,2023 - 25 Oct,2023)</h3>
+                    <p><span>● Position:</span>Web Developer</p>
+                    <p><span>● Keys Skills:</span>HTML5,CSS, CSS Flexbox, JavaScript, NodeJS, Oracle Database</p>
+                    <p><span>● Description:</span> I applied for an internship at Motion Cut through the AICTE (internship) website, and the program began on September 25th, 2023. I was selected for the Web development internship, which involved weekly tasks.</p>
+                </div>
+                <div class="content awd-sec" data-id="6">
+                  <h3>Competition</h3>
+                    <p>● Participated in a Inter-level hackathon for Smart India Hackathon (SIH) and achieved a top 10 finish.</p>
+                    <p>● Scored 62.91 in the TCS NQT IT exam.</p>
+                    <br>
+                  <h3>Workshops / Seminars</h3>
+                    <p>● Participated in a workshop on Cloud Computing at IIT Bhubaneswar, learning about AWS EC2.</p>
+                    <br>
+                  <h3>Certifications</h3>
+                  <p>● Completed a 12-month certification course on Data Structure and Algorithm with Java from NPTEL.</p>
+                   <p>● Understood the key concepts of the Git source control system through an online Udemy course.</p>
+                </div>
+              </main>
+            </div>
+           </div>
+          </div>
+     </div> 
+     
+     
+     
+ <script>
+  const menuItems = document.querySelectorAll('.changesec a');
+const contentItems = document.querySelectorAll('.content');
+
+menuItems.forEach(menuItem => {
+  menuItem.addEventListener('click', () => {
+    const itemId = menuItem.getAttribute('data-id');
+
+    // Remove the 'active-link' class from all menu item
+    menuItems.forEach(item => {
+      item.classList.remove('active-link');
+    });
+
+    // Add the 'active-link' class to the clicked menu item
+    menuItem.classList.add('active-link');
+
+    // Hide all content items
+    contentItems.forEach(contentItem => {
+      contentItem.style.display = 'none';
+    });
+
+    // Show the corresponding content item
+    const selectedContent = document.querySelector(`.content[data-id="${itemId}"]`);
+    if (selectedContent) {
+      selectedContent.style.display = 'block';
+    }
+  });
+});
+  
+
+ 
+ </script>
+    
+</body>
+</html>

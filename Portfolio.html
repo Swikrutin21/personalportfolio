@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles23.css">
+    <style>
+      .container .box h1{
+          padding-top: 60px;
+          padding-left: 35px; 
+          font-size: 50px; 
+       }
+      .pro-menu{
+         margin-top: 10px;
+         margin-left: 40px;
+         width: 83%;
+           aspect-ratio: 7/2;
+     height: 350px;
+     overflow-y: auto;
+       }
+ .pro-menu #items h2{
+   display: inline;
+    border-bottom: 2px solid white;
+    color: rgb(249, 249, 249);
+    padding: 4px;
+
+ }
+ .pro-menu #items h2:hover{
+   border-bottom: 3px white solid;
+      font-size: 30px;
+      transition: border-left 0.3s, font-size 0.3s;
+      cursor: pointer;
+ }
+ 
+ .pro-menu section img{
+      margin: 4px;
+ }
+ .pro-menu #items p{
+    margin: 10px;
+ }
+ .pro-menu #items #tkill{
+    margin: 10px;
+    display: flex;
+ }
+
+
+.pro-menu #items #tkill span{
+    padding: 3px;
+      margin: 7px;
+      font-size: 15px;
+      font-weight:600;
+      color: rgb(249, 103, 6);
+      background-color: rgb(255, 255, 254);
+      border: 2px solid white;
+      border-radius: 30%;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <nav>
+                <div><a href="index.html">Home</a></div>
+                <div><a href="About.html">About</a></div>
+                <div><a href="Portfolio.html">Portfolio</a></div>
+                <div><a href="Contact.html">Contact</a></div>
+              </nav>
+             <div class="port-contain">
+                <h1>Portfolio</h1>
+                <div class="pro-menu">
+                        <div id="items"><h2>Graphical Password System</h2>
+                           <p>We created a website prototype for this system where, upon registration, we are instructed to input our password in a graphical manner by selecting
+                            a series of pictures. then we must select a picture in the same manner when we log in. User doesn't have to remember numerous passwords this
+                            way, and passwords are more safe.</p>
+                            <h3>Screenshots</h3>
+                            <section>
+                                 <img src="home page screenshot.png" alt="home-page" width="500">
+                                 <img src="sign up page.png" alt="sign-up page" width="500">
+                                 <img src="user info page.png" alt="details page" width="500">
+                            </section>
+                            <section id="tkill"> <h3>● Key Skills<h3>
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>Java</span>
+                                <span>SQL</span>
+                                <span>JQuery</span>
+                            </section>
+                        </div> 
+                        <br>
+                        <div id="items"><h2>Budget Tracker</h2>
+                            <p>As a JavaScript project, I did make a budget tracker. I learned how to use it to develop websites and how it facilitates the addition of animation and
+                                various functionalities.</p>
+                                <h3>Screenshots</h3>
+                                <section>
+                                     <img src="main budget page.png" alt="budget-home-page" width="500">
+                                     <img src="budget page screenshot .png" alt="budget-1-page" width="500">
+                                     <img src="budget 2 screenshot .png" alt="budget-2-page" width="500">
+                                </section>
+                                <section id="tkill"> <h3>● Key Skills<h3>
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                    <span>JavaScript</span>
+                              </section>
+                        </div>
+                    
+                </div>
+             </div>
+          </div>
+    </div>
+    
+</body>
+</html>
