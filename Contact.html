@@ -7,11 +7,26 @@
     <link rel="stylesheet" href="styles23.css">
     <style>
         h1 {
-            margin-top: 100px;
+            margin-top: 80px;
             margin-left: 60px;
             padding: 10px;
             font-variant-caps: small-caps;
             font-size: 60px;
+        }
+        h1 .c{
+            color: rgb(3, 211, 253);
+        }
+        h1 .o{
+            color: rgb(215, 253, 3);
+        }
+        h1 .n{
+            color: rgb(239, 199, 241);
+        }
+        h1 .t{
+            color: rgb(249, 248, 248);
+        }
+        h1 .a{
+            color: rgb(136, 244, 114);
         }
         .info{
              margin-left: 70px;
@@ -22,9 +37,21 @@
             font-size: 30px;
             letter-spacing: 2px;
         }
-        .info div {
+        h3{
+            padding-top: 15px;
+            font-size: 30px;
+            letter-spacing: 2px;
+        }
+        .info div{
             font-size: 20px ;
             padding-top: 10px;
+            color: black;
+            letter-spacing: 2px;
+            
+        }
+        .info label{
+            font-size: 20px ;
+            margin: 10px;
             color: black;
         }
         a{
@@ -39,8 +66,45 @@
         .hidedet a:hover + .clicktext {
             display: inline; 
             color: rgb(4, 17, 29);
-            background-color: azure;
+            background-color: rgba(240, 255, 255, 0.281);
         }
+        .custom-form {
+            max-width: 300px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Style the labels and inputs */
+    label {
+      margin-bottom: 5px;
+      margin-top: 5px;
+    }
+
+    input[type="text"] {
+      width: 400px;
+      padding: 6px;
+      margin-bottom: 10px;
+      margin-top: 10px;
+      box-sizing: border-box; 
+
+    }
+
+    /* Customize the submit button */
+    input[type="submit"] {
+      background-color: #4caf50; /* Green */
+      color: white;
+      padding: 7px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    /* Change the button style on hover */
+    input[type="submit"]:hover {
+      background-color: #45a049; /* Darker green */
+    }
     </style>
 </head>
 <body>
@@ -53,15 +117,26 @@
                 <div><a href="Contact.html">Contact</a></div>
               </nav>
               <div class="conInfo">
-                 <h1>Contact</h1>
+                 <h1><span class="c">C</span>
+                    <span class="o">o</span>
+                    <span class="n">n</span>
+                    <span class="t">t</span>
+                    <span class="a">a</span>
+                    <span class="c">c</span>
+                    <span class="t">t</span>
+                </h1>
                  <div class="info">
                     <h2>Swikruti Nayak</h2>
-                    <audio src=""></audio>
-                    <div>Phone no. : <span>+91 9348160030</span> </div>
                     <div>Email : <a href="swikrutinyak21@gmail.com">swikrutinyak21@gmail.com</a></div>
                     <div class="hidedet">LinkedIn ID : <a href="https://www.linkedin.com/in/swikruti-nayak-6a9660266"> Swikruti Nayak</a> <span class="clicktext">Click on it</span></div>
-                    <div>Telgram ID : <span>swikruti21</span></div>
-                    <div>WhatsApp : <span>9348160030</span></div>
+                    <form action="/action_page.php">
+                        <h3>To Contact 🙋‍♀️</h3>
+                        <label for="fname">Name :</label>
+                        <input type="text" id="fname" name="fname" value="John"><br>
+                        <label for="lname">Email :</label>
+                        <input type="text" id="lname" name="lname" value="Doe">
+                        <input type="submit" value="Submit">
+                      </form> 
                  </div>
               </div>
         </div>
