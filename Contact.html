@@ -4,8 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Diphylleia&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles23.css">
     <style>
+        
         h1 {
             margin-top: 80px;
             margin-left: 60px;
@@ -20,10 +24,10 @@
             color: rgb(215, 253, 3);
         }
         h1 .n{
-            color: rgb(239, 199, 241);
+            color: rgb(241, 221, 199);
         }
         h1 .t{
-            color: rgb(249, 248, 248);
+            color: rgb(225, 191, 246);
         }
         h1 .a{
             color: rgb(136, 244, 114);
@@ -89,6 +93,7 @@
       box-sizing: border-box; 
 
     }
+    
 
     /* Customize the submit button */
     input[type="submit"] {
@@ -110,7 +115,7 @@
 <body>
     <div class="container">
         <div class="box">
-            <nav>
+            <nav class="menubar">
                 <div><a href="index.html">Home</a></div>
                 <div><a href="About.html">About</a></div>
                 <div><a href="Portfolio.html">Portfolio</a></div>
@@ -132,9 +137,12 @@
                     <form action="/action_page.php">
                         <h3>To Contact 🙋‍♀️</h3>
                         <label for="fname">Name :</label>
-                        <input type="text" id="fname" name="fname" value="John"><br>
+                        <input type="text" id="fname" name="fname" value="John">
                         <label for="lname">Email :</label>
-                        <input type="text" id="lname" name="lname" value="Doe">
+                        <input type="text" id="lname" name="lname" value="Doe@mail.com"> <br>
+                        <label for="lname">Message :</label>
+                        <textarea name="ymsg" id="ymsg" cols="60" rows="5"></textarea>
+                        <br> <br>
                         <input type="submit" value="Submit">
                       </form> 
                  </div>
